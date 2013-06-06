@@ -595,6 +595,6 @@ of testing JavaScript.
 [16]: http://gruntjs.com/
 [17]: http://www.amazon.com/Test-Driven-JavaScript-Development-Developers-Library/dp/0321683919/ref=sr_1_1?ie=UTF8&qid=1366506174&sr=8-1&keywords=test+driven+javascript+development
 
-[Srchr]: http://d.alistapart.com/375/app.png "Srchr"
-[code-lines]: http://d.alistapart.com/375/code-lines.png "Code lines"
-[application-views]: http://d.alistapart.com/375/app-views.png "Application Views"
+[Srchr]: ./img/app.png "Srchr"
+[code-lines]: ./img/code-lines.png "Code lines"
+[application-views]: ./img/app-views.png "Application Views"
