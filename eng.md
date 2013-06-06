@@ -577,8 +577,6 @@ of testing JavaScript.
 
 
 
-
-
 [1]: http://docs.seleniumhq.org/
 [2]: https://github.com/jnicklas/capybara
 [4]: https://twitter.com/ajpiano
