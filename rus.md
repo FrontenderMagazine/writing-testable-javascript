@@ -444,34 +444,34 @@
         xhr.restore();
       });
 
-      test('fetches from correct URL', function () {
+      test('Получаем данные с корректного URL', function () {
         var sd = new SearchData();
         sd.fetch('cat');
 
         assert.equal(requests[0].url, '/data/search.json?q=cat');
       });
 
-      test('вернуть promise', function () {
+      test('Получаем колбек', function () {
         var sd = new SearchData();
         var req = sd.fetch('cat');
 
         assert.isFunction(req.then);
       });
 
-      test('нет ответа, если нет запроса', function () {
+      test('Не отправляем пустой запрос', function () {
         var sd = new SearchData();
         var req = sd.fetch();
         assert.equal(requests.length, 0);
       });
 
-      test('вернуть promise, даже если нет запроса', function () {
+      test('Получаем колбек, даже если не был сделан запрос', function () {
         var sd = new SearchData();
         var req = sd.fetch();
 
         assert.isFunction( req.then );
       });
 
-      test('no query promise resolves with empty array', function () {
+      test('Не вызываем колбек, если сделан пустой запрос', function () {
         var sd = new SearchData();
         var req = sd.fetch();
         var spy = sinon.spy();
@@ -481,7 +481,7 @@
         assert.deepEqual(spy.args[0][0], []);
       });
 
-      test('returns contents of results property of the response', function () {
+      test('Получаем данные из свойства results ответа сервера', function () {
         var sd = new SearchData();
         var req = sd.fetch('cat');
         var spy = sinon.spy();
